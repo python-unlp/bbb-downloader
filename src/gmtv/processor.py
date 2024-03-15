@@ -9,10 +9,14 @@ def run(deskshare_input, webcams_input, output_path):
         deskshare_input,
         "-i",
         webcams_input,
-        "-c",
+        "-c:v",
+        "libvpx",
+        "-crf",
+        "30",
+        "-b:v",
+        "1M",
+        "-c:a",
         "copy",
-        "-strict",
-        "experimental",
         output_path,
     ]
     subprocess.run(command)
