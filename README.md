@@ -27,3 +27,5 @@ Ahora está listo para ejecutar el comando. Se debe agregar una variable de ento
 ```bash
 CODE=[hash] python main.py
 ```
+
+El archivo resultante lo encontrarás dentro del directorio raíz con el nombre `output.mp4`
