@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gmtv"
+version = "0.1.0"
+description = ""
+authors = ["Fede Otaran <otaran.federico@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gmtv", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+ffmpeg-python = "^0.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
